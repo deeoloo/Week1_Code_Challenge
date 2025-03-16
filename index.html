@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramen-Rating-App</title>
+    <link rel = "stylesheet" href ="index.css">
+</head>
+<body>
+    <header>Ramen Rater</header>
+    <div id ="ramen-menu"></div>
+    <div id = "menu-details">
+        <img class = "detail-image" src ="" alt ="ramen image">
+        <h2 class="name"></h2>
+        <h3 class="restaurant"></h3>
+        <p class="rating"></p>
+        <p class="comment"></p>
+
+    </div>
+
+<form id="edit-ramen">
+    <label for="edit-rating">Rating (/10):</label>
+    <input type="number" id="edit-rating" name="edit-rating" min="1" max="10" required>
+
+    <label for="edit-comment">Comment:</label>
+    <textarea id="edit-comment" name="edit-comment" required></textarea>
+
+    <button type="submit">Update</button>
+</form>
+
+
+<form id = "details">
+    <h2>New Ramen</h2>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      
+        <label for="restaurant">Restaurant:</label>
+        <input type="text" id="restaurant" name="restaurant" required>
+      
+        <label for="image">Image URL:</label>
+        <input type="text" id="image" name="image" required>
+      
+        <label for="rating">Rating (/10):</label>
+        <input type="number" id="rating" name="rating" min="1" max="10" required>
+      
+        <label for="comment">Comment:</label>
+        <textarea id="comment" name="comment" required></textarea>
+      
+        <button type="submit">Create</button>
+      </form>
+</form>
+    
+</body>
+<script src = "index.js"></script>
+</html>
