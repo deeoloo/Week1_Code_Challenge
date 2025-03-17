@@ -57,23 +57,17 @@ const ramens = [
       ramenMenu.appendChild(img);
     }); 
   }
+function handleClick(ramen) {
+  const menuDetails = document.getElementById("menu-details");
 
-  function handleClick(ramen) {
-    const detailImage = document.querySelector("#menu-details .detail-image");
-    const detailName = document.querySelector("#menu-details .name");
-    const detailRestaurant = document.querySelector("#menu-details .restaurant");
-    const detailRating = document.querySelector("#menu-details .rating");
-    const detailComment = document.querySelector("#menu-details .comment");
-  //accessing the form contents
-
-    detailImage.src = ramen.image;
-    detailImage.alt = ramen.name;
-    detailName.textContent = ramen.name;
-    detailImage.dataset.id = ramen.id;
-    detailRestaurant.textContent = ramen.restaurant;
-    detailRating.textContent = `Rating: ${ramen.rating}/10`;
-    detailComment.textContent = `Comment: ${ramen.comment}`; 
-  }
+  menuDetails.querySelector(".detail-image").src = ramen.image;
+  menuDetails.querySelector(".detail-image").alt = ramen.name;
+  menuDetails.querySelector(".detail-image").dataset.id = ramen.id;
+  menuDetails.querySelector(".name").textContent = ramen.name;
+  menuDetails.querySelector(".restaurant").textContent = ramen.restaurant;
+  menuDetails.querySelector(".rating").textContent = `Rating: ${ramen.rating}/10`;
+  menuDetails.querySelector(".comment").textContent = ramen.comment;
+}
 //a function to handle form submission for adding a new ramen.
   function addSubmitListener() {
     const form = document.getElementById("details");
