@@ -17,5 +17,5 @@ This application is designed for reviewing foods in a restaurant. It allows user
 2.  cd into the repository
 3.  run it using the live server.
 
-## Created by
+## Created by-
  Dorine Oloo
