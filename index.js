@@ -46,7 +46,7 @@ const ramens = [
   ];
   //a functio that load images from the ramens array using forEach
     // method and append them as <img> elements inside the #ramen-menu div.
-  function ramensDisplay() {
+  function picturesDisplay() {
     const ramenMenu = document.getElementById("ramen-menu"); 
     ramens.forEach(ramen => {
       const img = document.createElement("img");
@@ -127,7 +127,7 @@ function formEditor() {
 }
 //function that initializes the application 
   function main(){
-    ramensDisplay();
+    picturesDisplay();
     addSubmitListener();
     formEditor();
   }
